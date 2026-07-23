@@ -10,7 +10,7 @@
 <div
 	class="app-bar fixed w-full dark:bg-dark-surface bg-surface flex items-center justify-between top-0"
 >
-	<button class="ml-3">
+	<button class="ml-3" title="tombol menu">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			height="24px"
@@ -22,10 +22,13 @@
 			/></svg
 		>
 	</button>
-	<form class="flex items-center rounded-full">
+
+	
+	<form class="flex items-center rounded-full w-full ml-6 mr-6">
 		<label for="voice-search" class="sr-only">Search</label>
+		
 		<div class="relative w-full rounded-full">
-			<div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+			<div class="absolute inset-y-0  flex items-center ps-3 pointer-events-none">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					height="24px"
@@ -40,11 +43,11 @@
 			<input
 				type="text"
 				id="voice-search"
-				class="border-none focus:outline-none focus:ring-0 rounded-full block w-full ps-9 pe-3 py-2.5 bg-surface-container-high text-on-surface-variant text-sm rounded-base placeholder:text-body"
+				class=" w-full border-none focus:outline-none focus:ring-0 rounded-full block ps-9 pe-3 py-2.5 bg-surface-container-high text-on-surface-variant text-sm rounded-base placeholder:text-body"
 				placeholder="cari..."
 				required
 			/>
-			<button type="button" class="absolute inset-y-0 end-0 flex items-center pe-3">
+			<button title="tombol cari" type="button" class="absolute inset-y-0 end-0 flex items-center pe-3">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					class="fill-on-background dark:fill-dark-on-background"
@@ -58,6 +61,7 @@
 			</button>
 		</div>
 	</form>
+	
 	<button
 		class="mr-3 mt-2 mb-2 text-on-secondary-container dark:text-dark-on-secondary-container bg-secondary-container dark:bg-dark-secondary-container text-sm p-2.5 rounded-full"
 	>
