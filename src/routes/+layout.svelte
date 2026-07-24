@@ -4,7 +4,7 @@
 	import '../app.css';
 	let { children } = $props();
 	import { onNavigate } from '$app/navigation';
-
+    import logo from '$lib/assets/logo96.png'
 	onNavigate((navigation) => {
 		// Check if the browser supports the View Transitions API
 		if (!document.startViewTransition) return;
@@ -24,19 +24,10 @@
 	class="app-bar fixed w-full dark:bg-dark-surface bg-surface flex items-center justify-between top-0"
 >
 	<a href="/" class="ml-3" title="tombol menu">
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			height="24px"
-			viewBox="0 -960 960 960"
-			width="24px"
-			class="fill-on-background dark:fill-dark-on-background"
-			><path
-				d="M170-254.62q-12.75 0-21.37-8.63-8.63-8.62-8.63-21.38 0-12.75 8.63-21.37 8.62-8.61 21.37-8.61h620q12.75 0 21.37 8.62 8.63 8.63 8.63 21.39 0 12.75-8.63 21.37-8.62 8.61-21.37 8.61H170ZM170-450q-12.75 0-21.37-8.63-8.63-8.63-8.63-21.38 0-12.76 8.63-21.37Q157.25-510 170-510h620q12.75 0 21.37 8.63 8.63 8.63 8.63 21.38 0 12.76-8.63 21.37Q802.75-450 790-450H170Zm0-195.39q-12.75 0-21.37-8.62-8.63-8.63-8.63-21.39 0-12.75 8.63-21.37 8.62-8.61 21.37-8.61h620q12.75 0 21.37 8.63 8.63 8.62 8.63 21.38 0 12.75-8.63 21.37-8.62 8.61-21.37 8.61H170Z"
-			/></svg
-		>
+	<img src={logo} alt="logo mamimuna">
 	</a>
 
-	<form class="flex items-center rounded-full w-full ml-6 mr-6" data-sveltekit-keepfocus>
+	<form class="flex items-center rounded-full w-full ml-2 mr-4" data-sveltekit-keepfocus>
 		<label for="voice-search" class="sr-only">Search</label>
 
 		<div class="relative w-full rounded-full">
