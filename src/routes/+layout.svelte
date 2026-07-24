@@ -10,18 +10,18 @@
 <div
 	class="app-bar fixed w-full dark:bg-dark-surface bg-surface flex items-center justify-between top-0"
 >
-	<button class="ml-3" title="tombol menu">
+	<a href="/" class="ml-3" title="tombol menu">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			height="24px"
 			viewBox="0 -960 960 960"
 			width="24px"
-			fill="#1f1f1f"
+			class="fill-on-background dark:fill-dark-on-background"
 			><path
 				d="M170-254.62q-12.75 0-21.37-8.63-8.63-8.62-8.63-21.38 0-12.75 8.63-21.37 8.62-8.61 21.37-8.61h620q12.75 0 21.37 8.62 8.63 8.63 8.63 21.39 0 12.75-8.63 21.37-8.62 8.61-21.37 8.61H170ZM170-450q-12.75 0-21.37-8.63-8.63-8.63-8.63-21.38 0-12.76 8.63-21.37Q157.25-510 170-510h620q12.75 0 21.37 8.63 8.63 8.63 8.63 21.38 0 12.76-8.63 21.37Q802.75-450 790-450H170Zm0-195.39q-12.75 0-21.37-8.62-8.63-8.63-8.63-21.39 0-12.75 8.63-21.37 8.62-8.61 21.37-8.61h620q12.75 0 21.37 8.63 8.63 8.62 8.63 21.38 0 12.75-8.63 21.37-8.62 8.61-21.37 8.61H170Z"
 			/></svg
 		>
-	</button>
+	</a>
 
 	
 	<form class="flex items-center rounded-full w-full ml-6 mr-6">
@@ -40,13 +40,16 @@
 					/></svg
 				>
 			</div>
+			<a href="/cari">
 			<input
 				type="text"
+			
 				id="voice-search"
-				class=" w-full border-none focus:outline-none focus:ring-0 rounded-full block ps-9 pe-3 py-2.5 bg-surface-container-high text-on-surface-variant text-sm rounded-base placeholder:text-body"
+				class=" w-full dark:text-dark-on-surface-variant dark:bg-dark-surface-container-high border-none focus:outline-none focus:ring-0 rounded-full block ps-9 pe-3 py-2.5 bg-surface-container-high text-on-surface-variant text-sm rounded-base placeholder:text-body"
 				placeholder="cari..."
 				required
 			/>
+			</a>
 			<button title="tombol cari" type="button" class="absolute inset-y-0 end-0 flex items-center pe-3">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
