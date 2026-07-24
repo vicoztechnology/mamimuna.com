@@ -36,7 +36,7 @@
 		>
 	</a>
 
-	<form class="flex items-center rounded-full w-full ml-6 mr-6">
+	<form class="flex items-center rounded-full w-full ml-6 mr-6" data-sveltekit-keepfocus>
 		<label for="voice-search" class="sr-only">Search</label>
 
 		<div class="relative w-full rounded-full">
