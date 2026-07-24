@@ -3,6 +3,19 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import '../app.css';
 	let { children } = $props();
+	import { onNavigate } from '$app/navigation';
+
+	onNavigate((navigation) => {
+		// Check if the browser supports the View Transitions API
+		if (!document.startViewTransition) return;
+
+		return new Promise((resolve) => {
+			document.startViewTransition(async () => {
+				resolve(); // Tells SvelteKit to update the DOM
+				await navigation.complete; // Waits for the new page to finish loading
+			});
+		});
+	});
 </script>
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
@@ -23,12 +36,11 @@
 		>
 	</a>
 
-	
 	<form class="flex items-center rounded-full w-full ml-6 mr-6">
 		<label for="voice-search" class="sr-only">Search</label>
-		
+
 		<div class="relative w-full rounded-full">
-			<div class="absolute inset-y-0  flex items-center ps-3 pointer-events-none">
+			<div class="absolute inset-y-0 flex items-center ps-3 pointer-events-none">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					height="24px"
@@ -40,17 +52,20 @@
 					/></svg
 				>
 			</div>
-			<a href="/cari">
-			<input
-				type="text"
-			
-				id="voice-search"
-				class=" w-full dark:text-dark-on-surface-variant dark:bg-dark-surface-container-high border-none focus:outline-none focus:ring-0 rounded-full block ps-9 pe-3 py-2.5 bg-surface-container-high text-on-surface-variant text-sm rounded-base placeholder:text-body"
-				placeholder="cari..."
-				required
-			/>
+			<a href="/cari" aria-label="cari">
+				<input
+					type="text"
+					id="voice-search"
+					class=" w-full dark:text-dark-on-surface-variant dark:bg-dark-surface-container-high border-none focus:outline-none focus:ring-0 rounded-full block ps-9 pe-3 py-2.5 bg-surface-container-high text-on-surface-variant text-sm rounded-base placeholder:text-body"
+					placeholder="cari..."
+					required
+				/>
 			</a>
-			<button title="tombol cari" type="button" class="absolute inset-y-0 end-0 flex items-center pe-3">
+			<button
+				title="tombol cari"
+				type="button"
+				class="absolute inset-y-0 end-0 flex items-center pe-3"
+			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					class="fill-on-background dark:fill-dark-on-background"
@@ -64,7 +79,7 @@
 			</button>
 		</div>
 	</form>
-	
+
 	<button
 		class="mr-3 mt-2 mb-2 text-on-secondary-container dark:text-dark-on-secondary-container bg-secondary-container dark:bg-dark-secondary-container text-sm p-2.5 rounded-full"
 	>
