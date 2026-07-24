@@ -4,7 +4,7 @@
 	import '../app.css';
 	let { children } = $props();
 	import { onNavigate } from '$app/navigation';
-    import logo from '$lib/assets/logo96.png'
+    import logo from '$lib/assets/logo72.png'
 	onNavigate((navigation) => {
 		// Check if the browser supports the View Transitions API
 		if (!document.startViewTransition) return;
