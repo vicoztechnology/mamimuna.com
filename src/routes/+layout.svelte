@@ -23,11 +23,11 @@
 <div
 	class="app-bar fixed w-full dark:bg-dark-surface bg-surface flex items-center justify-between top-0"
 >
-	<a href="/" class="ml-3" title="tombol menu">
+	<a href="/" class="ml-1" title="tombol menu">
 	<img src={logo} alt="logo mamimuna">
 	</a>
 
-	<form class="flex items-center rounded-full w-full ml-2 mr-4" data-sveltekit-keepfocus>
+	<form class="flex items-center rounded-full w-full ml-1 mr-4" data-sveltekit-keepfocus>
 		<label for="voice-search" class="sr-only">Search</label>
 
 		<div class="relative w-full rounded-full">
