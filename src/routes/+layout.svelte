@@ -103,7 +103,7 @@
 	</form>
 	{#if page.url.pathname === '/'}
 		<button
-			class=" text-on-secondary-container dark:text-dark-on-secondary-container bg-secondary-container dark:bg-dark-secondary-container text-sm p-2.5 rounded-full"
+			class="mr-3 text-on-secondary-container dark:text-dark-on-secondary-container bg-secondary-container dark:bg-dark-secondary-container text-sm p-2.5 rounded-full"
 		>
 			daftar
 		</button>
