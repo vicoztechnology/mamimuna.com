@@ -113,3 +113,9 @@
   --color-dark-custom-color1-color-container: rgb(11 74 114);
   --color-dark-custom-color1-on-color-container: rgb(205 229 255);
 }
+
+::view-transition-old(root),
+::view-transition-new(root) {
+	animation-duration: 0.8s;
+  
+}

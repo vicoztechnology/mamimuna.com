@@ -4,7 +4,8 @@
 	import '../app.css';
 	let { children } = $props();
 	import { onNavigate } from '$app/navigation';
-    import logo from '$lib/assets/logo72.png'
+	import { page, navigating } from '$app/state';
+	import logo from '$lib/assets/logo72.png';
 	onNavigate((navigation) => {
 		// Check if the browser supports the View Transitions API
 		if (!document.startViewTransition) return;
@@ -13,6 +14,8 @@
 			document.startViewTransition(async () => {
 				resolve(); // Tells SvelteKit to update the DOM
 				await navigation.complete; // Waits for the new page to finish loading
+				console.log('Coming from:', navigation.from);
+				console.log('Going to:', navigation.to);
 			});
 		});
 	});
@@ -23,9 +26,11 @@
 <div
 	class="app-bar fixed w-full dark:bg-dark-surface bg-surface flex items-center justify-between top-0"
 >
-	<a href="/" class="ml-1" title="tombol menu">
-	<img src={logo} alt="logo mamimuna">
-	</a>
+	{#if page.url.pathname==='/'}
+		<a href="/" class="" title="tombol menu">
+			<img src={logo} alt="logo mamimuna" />
+		</a>
+	{/if}
 
 	<form class="flex items-center rounded-full w-full ml-1 mr-4" data-sveltekit-keepfocus>
 		<label for="voice-search" class="sr-only">Search</label>
@@ -70,12 +75,13 @@
 			</button>
 		</div>
 	</form>
-
-	<button
-		class="mr-3 mt-2 mb-2 text-on-secondary-container dark:text-dark-on-secondary-container bg-secondary-container dark:bg-dark-secondary-container text-sm p-2.5 rounded-full"
-	>
-		daftar
-	</button>
+	{#if page.url.pathname==='/'}
+		<button
+			class=" text-on-secondary-container dark:text-dark-on-secondary-container bg-secondary-container dark:bg-dark-secondary-container text-sm p-2.5 rounded-full"
+		>
+			daftar
+		</button>
+	{/if}
 </div>
 
 {@render children()}
