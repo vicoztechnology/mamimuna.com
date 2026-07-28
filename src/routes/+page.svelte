@@ -1,49 +1,15 @@
 <script>
-	
+let y = $state(0);
+let lebar = $derived(y - 70);
+let tinggi = $derived((y - 70) / 2);
+let lebar2 = $derived(y - 310);
+let tinggi2 = $derived((y - 310) / 2);
 </script>
-
-<div class="home mt-14 text-on-background dark:text-dark-on-background" >
-
-
-	<div>Home 1</div>
-	<div>Home 2</div>
-	<div>Home 3</div>
-	<div>Home 4 josjis2sfsdf</div>
-	<div>Home 1</div>
-	<div>Home 2</div>
-	<div>Home 3</div>
-	<div>Home 4</div>
-	<div>Home 1</div>
-	<div>Home 2</div>
-	<div>Home 3</div>
-	<div>Home 4</div>
-	<div>Home 1</div>
-	<div>Home 2</div>
-	<div>Home 3</div>
-	<div>Home 4</div>
-	<div>Home 1</div>
-	<div>Home 2</div>
-	<div>Home 3</div>
-	<div>Home 4</div>
-	<div>Home 1</div>
-	<div>Home 2</div>
-	<div>Home 3</div>
-	<div>Home 4</div>
-	<div>Home 1</div>
-	<div>Home 2</div>
-	<div>Home 3</div>
-	<div>Home 4</div>
-	<div>Home 1</div>
-	<div>Home 2</div>
-	<div>Home 3</div>
-	<div>Home 4</div>
-	<div>Home 1</div>
-	<div>Home 2</div>
-	<div>Home 3</div>
-	<div>Home 4</div>
-	<div>Home 1</div>
-	<div>Home 2</div>
-	<div>Home 3</div>
-	<div>Home 4</div>
-
+<svelte:window bind:innerWidth={y} />
+<div class="home mt-16 text-on-background dark:text-dark-on-background max-w-full overflow-scroll">
+	<div class="m-2 flex gap-2">
+		<img width={lebar} height={tinggi} class="rounded-4xl" src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="carousel 1"/>
+		<img width={lebar2} height={tinggi2} class="rounded-4xl object-cover" src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8anVpY2V8ZW58MHwwfDB8fHww" alt="carousel 1"/>
+		
+	</div>
 </div>
