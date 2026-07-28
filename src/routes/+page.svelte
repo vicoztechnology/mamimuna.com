@@ -6,7 +6,7 @@
 	<div>Home 1</div>
 	<div>Home 2</div>
 	<div>Home 3</div>
-	<div>Home 4 update</div>
+	<div>Home 4 josjis</div>
 	<div>Home 1</div>
 	<div>Home 2</div>
 	<div>Home 3</div>
