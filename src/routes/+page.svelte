@@ -36,7 +36,7 @@
 		</div>
 	</div>
 </div>
-<div class="mt-3 flex ml-4 mr-4 max-w-full flex-wrap flex-row">
+<div class="mt-3 flex ml-4 mr-4 max-w-full flex-wrap flex-row gap-y-4">
 	<div class="grid justify-center text-center basis-1/4">
 		<button
 			class="border-outline-variant dark:border-dark-outline-variant grid w-16 h-16 place-items-center gap-y-0 border rounded-3xl"
@@ -48,8 +48,9 @@
 				viewBox="0 -960 960 960"
 				width="40px"
 				class="fill-error dark:fill-dark-error"
-				><path
+								><path
 					d="m435.26-391.13 163.82-105.1q13.15-8.48 13.15-23.72 0-15.23-13.15-23.82l-163.82-105.1q-14.23-9.59-29-1.23-14.77 8.37-14.77 25.46v209.28q0 17.09 14.77 25.46 14.77 8.36 29-1.23ZM162.57-220q-25.79 0-44.18-18.39T100-282.57v-474.86q0-25.79 18.39-44.18T162.57-820h634.86q25.79 0 44.18 18.39T860-757.43v474.86q0 25.79-18.39 44.18T797.43-220h-182.3v48.72q0 13.39-8.95 22.33-8.94 8.95-22.34 8.95H376.16q-13.4 0-22.34-8.95-8.95-8.94-8.95-22.33V-220h-182.3Zm0-50.26h634.86q4.62 0 8.47-3.84 3.84-3.85 3.84-8.47v-474.86q0-4.62-3.84-8.47-3.85-3.84-8.47-3.84H162.57q-4.62 0-8.47 3.84-3.84 3.85-3.84 8.47v474.86q0 4.62 3.84 8.47 3.85 3.84 8.47 3.84Zm-12.31 0v-499.48 499.48Z"
+				
 				/></svg
 			>
 		</button>
