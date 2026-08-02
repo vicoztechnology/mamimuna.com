@@ -182,7 +182,61 @@
 		<span class="text-on-surface-variant dark:text-dark-on-surface-variant text-sm">Bumbu</span>
 	</div>
 </div>
+<div class="flex justify-between ml-3 mr-3 text-primary dark:text-dark-primary font-bold mt-3">
+	<div>Hot Promo</div>
+	<div>Semuanya</div>
+</div>
+<div
+	class="gap-3 hot-promo rounded-3xl bg-primary-container dark:bg-dark-primary-container flex overflow-scroll scrollbar-none w-full p-2"
+>
+	<img
+		height="200px"
+		width="100px"
+		class="rounded-2xl"
+		src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlc2glMjBjYXJyb3R8ZW58MHwxfDB8fHww"
+		alt="wortel"
+	/>
 
+	<img
+		height="200px"
+		width="100px"
+		class="rounded-2xl"
+		src="https://plus.unsplash.com/premium_photo-1664648005449-b50d4773c2ff?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGt1YmlzJTIwdW5ndXxlbnwwfDF8MHx8fDA%3D"
+		alt="wortel"
+	/>
+
+	<img
+		height="200px"
+		width="100px"
+		class="rounded-2xl"
+		src="https://images.unsplash.com/photo-1528556860752-2a6a19a285a3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGp1aWNlfGVufDB8MXwwfHx8MA%3D%3D"
+		alt="wortel"
+	/>
+
+	<img
+		height="200px"
+		width="100px"
+		class="rounded-2xl"
+		src="https://images.unsplash.com/photo-1587351177732-5b0739d1bd44?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YnJva29saXxlbnwwfDF8MHx8fDA%3D"
+		alt="wortel"
+	/>
+
+	<img
+		height="200px"
+		width="100px"
+		class="rounded-2xl"
+		src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlc2glMjBjYXJyb3R8ZW58MHwxfDB8fHww"
+		alt="wortel"
+	/>
+
+	<img
+		height="200px"
+		width="100px"
+		class="rounded-2xl"
+		src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlc2glMjBjYXJyb3R8ZW58MHwxfDB8fHww"
+		alt="wortel"
+	/>
+</div>
 <div class="ml-3 mr-3 mt-7 mb-17">
 	<ul class="grid grid-cols-2 gap-3">
 		<li class="rounded-3xl shadow-md pb-3">
@@ -194,10 +248,12 @@
 			<div class="pl-2 pr-2 pt-2">
 				<div class="nama text-on-surface-variant dark:text-dark-on-surface-variant">Curly Kale</div>
 				<div class="harga text-primary dark:text-dark-primary font-bold">Rp. 15.000</div>
-				<div class="text-xs text-on-surface-variant dark:text-dark-on-surface-variant">Terjual 160</div>
+				<div class="text-xs text-on-surface-variant dark:text-dark-on-surface-variant">
+					Terjual 160
+				</div>
 			</div>
 		</li>
-		<li class="shadow-md rounded-3xl ">
+		<li class="shadow-md rounded-3xl">
 			<img
 				class="rounded-3xl"
 				src="https://images.unsplash.com/photo-1652448919151-c8be3cfb185b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHN0cmF3YmVycnl8ZW58MHwyfDB8fHww"
@@ -230,6 +286,5 @@
 				<div>nama</div>
 			</div>
 		</li>
-	
 	</ul>
 </div>
