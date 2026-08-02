@@ -112,7 +112,7 @@
 
 {@render children()}
 <div
-	class="pt-2 nav-buttom bottom-0 flex-row fixed w-full dark:bg-dark-surface bg-surface flex items-center justify-around"
+	class="pt-2 text-sm nav-buttom bottom-0 flex-row fixed w-full dark:bg-dark-surface bg-surface flex items-center justify-around"
 >
 	<div class=" flex-row justify-items-center">
 		<div

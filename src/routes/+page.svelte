@@ -189,6 +189,8 @@
 <div
 	class="gap-3 hot-promo rounded-3xl bg-primary-container dark:bg-dark-primary-container flex overflow-scroll scrollbar-none w-full p-2"
 >
+
+<div class="relative rounded-2xl">
 	<img
 		height="200px"
 		width="100px"
@@ -196,7 +198,57 @@
 		src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlc2glMjBjYXJyb3R8ZW58MHwxfDB8fHww"
 		alt="wortel"
 	/>
+	<div class="absolute inset-0 bg-black/10 rounded-2xl"></div>
+	<div class="absolute inset-0 flex flex-col items-start justify-end text-left p-1">
+		<h2 class="text-base font-bold text-white">Wortel</h2>
+		<p class="text-sm text-gray-200 ">Rp.10.000</p>
+	</div>
+</div>
+<div class="relative rounded-2xl">
+	<img
+		height="200px"
+		width="100px"
+		class="rounded-2xl"
+		src="https://images.unsplash.com/photo-1528556860752-2a6a19a285a3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGp1aWNlfGVufDB8MXwwfHx8MA%3D%3D"
+		alt="wortel"
+	/>
+	<div class="absolute inset-0 bg-black/10 rounded-2xl"></div>
+	<div class="absolute inset-0 flex flex-col items-start justify-end text-left p-1">
+		<h2 class="text-base font-bold text-white">Wortel</h2>
+		<p class="text-sm text-gray-200 ">Rp.10.000</p>
+	</div>
+</div>
+<div class="relative rounded-2xl">
+	<img
+		height="200px"
+		width="100px"
+		class="rounded-2xl"
+		src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlc2glMjBjYXJyb3R8ZW58MHwxfDB8fHww"
+		alt="wortel"
+	/>
+	<div class="absolute inset-0 bg-black/10 rounded-2xl"></div>
+	<div class="absolute inset-0 flex flex-col items-start justify-end text-left p-1">
+		<h2 class="text-base font-bold text-white">Wortel</h2>
+		<p class="text-sm text-gray-200 ">Rp.10.000</p>
+	</div>
+</div>
+<div class="relative rounded-2xl">
+	<img
+		height="200px"
+		width="100px"
+		class="rounded-2xl"
+		src="https://images.unsplash.com/photo-1528556860752-2a6a19a285a3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGp1aWNlfGVufDB8MXwwfHx8MA%3D%3D"
+		alt="wortel"
+	/>
+	<div class="absolute inset-0 bg-black/10 rounded-2xl"></div>
+	<div class="absolute inset-0 flex flex-col items-start justify-end text-left p-1">
+		<h2 class="text-base font-bold text-white">Wortel</h2>
+		<p class="text-sm text-gray-200 ">Rp.10.000</p>
+	</div>
+</div>
 
+
+	<!--
 	<img
 		height="200px"
 		width="100px"
@@ -236,8 +288,13 @@
 		src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlc2glMjBjYXJyb3R8ZW58MHwxfDB8fHww"
 		alt="wortel"
 	/>
+	-->
 </div>
-<div class="ml-3 mr-3 mt-7 mb-17">
+<div class="flex justify-between ml-3 mr-3 text-primary dark:text-dark-primary font-bold mt-3">
+	<div>For You</div>
+	<div>Semuanya</div>
+</div>
+<div class="text-sm ml-3 mr-3 mt-7 mb-17">
 	<ul class="grid grid-cols-2 gap-3">
 		<li class="rounded-3xl shadow-md pb-3">
 			<img
