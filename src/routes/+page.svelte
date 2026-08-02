@@ -8,7 +8,7 @@
 
 <svelte:window bind:innerWidth={y} />
 <div
-	class="home mt-13 text-on-background dark:text-dark-on-background max-w-full overflow-scroll scrollbar-none"
+	class="home mt-15 text-on-background dark:text-dark-on-background max-w-full overflow-scroll scrollbar-none"
 >
 	<div>
 		<div class="flex m-2 gap-2">
@@ -183,9 +183,9 @@
 	</div>
 </div>
 
-<div class="ml-3 mr-3 mt-5">
+<div class="ml-3 mr-3 mt-7 mb-17">
 	<ul class="grid grid-cols-2 gap-3">
-		<li class="rounded-3xl shadow-md pb-2">
+		<li class="rounded-3xl shadow-md pb-3">
 			<img
 				class="rounded-3xl"
 				src="https://images.unsplash.com/photo-1622943495354-f49d2964094c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2FsZXxlbnwwfDJ8MHx8fDA%3D"

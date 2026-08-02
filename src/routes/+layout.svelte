@@ -24,7 +24,7 @@
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
 <div
-	class="app-bar fixed w-full dark:bg-dark-surface bg-surface flex items-center justify-between top-0 pt-3"
+	class="app-bar fixed w-full dark:bg-dark-surface bg-surface flex items-center justify-between top-0 pt-3 pb-3"
 >
 	{#if page.url.pathname === '/'}
 		<a href="/" class="ml-1" title="tombol menu">
@@ -111,3 +111,69 @@
 </div>
 
 {@render children()}
+<div
+	class="pt-2 nav-buttom bottom-0 flex-row fixed w-full dark:bg-dark-surface bg-surface flex items-center justify-around"
+>
+	<div class=" flex-row justify-items-center">
+		<div
+			class="bg-secondary-container dark:bg-dark-secondary-container pl-3 pr-3 pt-1 pb-1 rounded-4xl"
+		>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				height="24px"
+				viewBox="0 -960 960 960"
+				width="24px"
+				class="fill-on-secondary-container dark:fill-dark-on-secondary-container"
+				><path
+					d="M240-200h133.85v-201.54q0-15.36 10.39-25.76 10.4-10.39 25.76-10.39h140q15.36 0 25.76 10.39 10.39 10.4 10.39 25.76V-200H720v-353.85q0-3.07-1.35-5.57-1.34-2.5-3.65-4.43L487.31-735q-3.08-2.69-7.31-2.69-4.23 0-7.31 2.69L245-563.85q-2.31 1.93-3.65 4.43-1.35 2.5-1.35 5.57V-200Zm-60 0v-353.85q0-17.17 7.68-32.53 7.69-15.37 21.24-25.31l227.7-171.54q18.95-14.46 43.32-14.46t43.44 14.46l227.7 171.54q13.55 9.94 21.24 25.31 7.68 15.36 7.68 32.53V-200q0 24.54-17.73 42.27Q744.54-140 720-140H562.31q-15.37 0-25.76-10.4-10.4-10.39-10.4-25.76v-201.53h-92.3v201.53q0 15.37-10.4 25.76-10.39 10.4-25.76 10.4H240q-24.54 0-42.27-17.73Q180-175.46 180-200Zm300-269.23Z"
+				/></svg
+			>
+		</div>
+		<div class="text-primary font-semibold">Home</div>
+	</div>
+	<div class="justify-items-center">
+		<div class="">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				height="24px"
+				viewBox="0 -960 960 960"
+				width="24px"
+				class="fill-on-surface-variant dark:fill-dark-on-surface-variant"
+				><path
+					d="M441.62-391.54 598-491.77q15.31-10.08 15.31-28.23T598-548.23L441.62-648.46q-16.54-11.08-34.08-1.81T390-620.85v201.7q0 20.15 17.54 29.42 17.54 9.27 34.08-1.81ZM172.31-220Q142-220 121-241q-21-21-21-51.31v-455.38Q100-778 121-799q21-21 51.31-21h615.38Q818-820 839-799q21 21 21 51.31v455.38Q860-262 839-241q-21 21-51.31 21H620v43.84q0 15.47-10.35 25.81Q599.31-140 583.84-140H376.16q-15.47 0-25.81-10.35Q340-160.69 340-176.16V-220H172.31Zm0-60h615.38q4.62 0 8.46-3.85 3.85-3.84 3.85-8.46v-455.38q0-4.62-3.85-8.46-3.84-3.85-8.46-3.85H172.31q-4.62 0-8.46 3.85-3.85 3.84-3.85 8.46v455.38q0 4.62 3.85 8.46 3.84 3.85 8.46 3.85ZM160-280v-480 480Z"
+				/></svg
+			>
+		</div>
+		<div class="text-on-surface-variant dark:text-dark-on-surface-variant">Live</div>
+	</div>
+	<div class="justify-items-center">
+		<div class="">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				height="24px"
+				viewBox="0 -960 960 960"
+				width="24px"
+				class="fill-on-surface-variant dark:fill-dark-on-surface-variant"
+				><path
+					d="M210-204.62q-12.75 0-21.37-8.62-8.63-8.63-8.63-21.39 0-12.75 8.63-21.37 8.62-8.61 21.37-8.61h42.31v-298.47q0-80.69 49.81-142.69 49.8-62 127.88-79.31V-810q0-20.83 14.57-35.42Q459.14-860 479.95-860q20.82 0 35.43 14.58Q530-830.83 530-810v24.92q78.08 17.31 127.88 79.31 49.81 62 49.81 142.69v298.47H750q12.75 0 21.37 8.62 8.63 8.63 8.63 21.39 0 12.75-8.63 21.37-8.62 8.61-21.37 8.61H210Zm270-293.07Zm-.07 405.38q-29.85 0-51.04-21.24-21.2-21.24-21.2-51.07h144.62q0 29.93-21.26 51.12-21.26 21.19-51.12 21.19Zm-167.62-172.3h335.38v-298.47q0-69.46-49.11-118.57-49.12-49.12-118.58-49.12-69.46 0-118.58 49.12-49.11 49.11-49.11 118.57v298.47Z"
+				/></svg
+			>
+		</div>
+		<div class="text-on-surface-variant dark:text-dark-on-surface-variant">Notifikasi</div>
+	</div>
+	<div class="justify-items-center">
+		<div class="">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				height="24px"
+				viewBox="0 -960 960 960"
+				width="24px"
+				class="fill-on-surface-variant dark:fill-dark-on-surface-variant"
+				><path
+					d="m241.54-260-80.08 80.07q-17.07 17.08-39.27 7.74Q100-181.54 100-205.85v-581.84Q100-818 121-839q21-21 51.31-21h615.38Q818-860 839-839q21 21 21 51.31v455.38Q860-302 839-281q-21 21-51.31 21H241.54ZM216-320h571.69q4.62 0 8.46-3.85 3.85-3.84 3.85-8.46v-455.38q0-4.62-3.85-8.46-3.84-3.85-8.46-3.85H172.31q-4.62 0-8.46 3.85-3.85 3.84-3.85 8.46v523.08L216-320Zm-56 0v-480 480Zm120-90h240q12.77 0 21.38-8.62Q550-427.23 550-440t-8.62-21.38Q532.77-470 520-470H280q-12.77 0-21.38 8.62Q250-452.77 250-440t8.62 21.38Q267.23-410 280-410Zm0-120h400q12.77 0 21.38-8.62Q710-547.23 710-560t-8.62-21.38Q692.77-590 680-590H280q-12.77 0-21.38 8.62Q250-572.77 250-560t8.62 21.38Q267.23-530 280-530Zm0-120h400q12.77 0 21.38-8.62Q710-667.23 710-680t-8.62-21.38Q692.77-710 680-710H280q-12.77 0-21.38 8.62Q250-692.77 250-680t8.62 21.38Q267.23-650 280-650Z"
+				/></svg
+			>
+		</div>
+		<div class="text-on-surface-variant dark:text-dark-on-surface-variant">Chat</div>
+	</div>
+</div>
