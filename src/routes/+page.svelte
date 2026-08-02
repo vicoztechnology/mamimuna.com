@@ -291,7 +291,7 @@
 	-->
 </div>
 <div class="flex justify-between ml-3 mr-3 text-primary dark:text-dark-primary font-bold mt-3">
-	<div>For You</div>
+	<div>Untukmu</div>
 	<div>Semuanya</div>
 </div>
 <div class="text-sm ml-3 mr-3 mt-7 mb-17">
