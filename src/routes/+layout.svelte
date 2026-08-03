@@ -24,7 +24,7 @@
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
 <div
-	class="app-bar fixed w-full dark:bg-dark-surface bg-surface flex items-center justify-between top-0 pt-3 pb-3"
+	class="app-bar z-10 fixed w-full dark:bg-dark-surface bg-surface flex items-center justify-between top-0 pt-3 pb-3"
 >
 	{#if page.url.pathname === '/'}
 		<a href="/" class="ml-1" title="tombol menu">
@@ -132,7 +132,7 @@
 		<div class="text-primary font-semibold">Home</div>
 	</div>
 	<div class="justify-items-center">
-		<div class="">
+		<div class="bg-secondary-container dark:bg-dark-secondary-container pl-3 pr-3 pt-1 pb-1 rounded-4xl">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				height="24px"
@@ -147,7 +147,7 @@
 		<div class="text-on-surface-variant dark:text-dark-on-surface-variant">Live</div>
 	</div>
 	<div class="justify-items-center">
-		<div class="">
+		<div class="bg-secondary-container dark:bg-dark-secondary-container pl-3 pr-3 pt-1 pb-1 rounded-4xl">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				height="24px"
@@ -162,7 +162,7 @@
 		<div class="text-on-surface-variant dark:text-dark-on-surface-variant">Notifikasi</div>
 	</div>
 	<div class="justify-items-center">
-		<div class="">
+		<div class="bg-secondary-container dark:bg-dark-secondary-container pl-3 pr-3 pt-1 pb-1 rounded-4xl">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				height="24px"
