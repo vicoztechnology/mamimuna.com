@@ -115,24 +115,29 @@
 	class="pt-2 text-sm nav-buttom bottom-0 flex-row fixed w-full dark:bg-dark-surface bg-surface flex items-center justify-around"
 >
 	<div class=" flex-row justify-items-center">
+		<a href="/" aria-current={page.url.pathname === '/'} aria-label="beranda">
+			<div
+				class="bg-secondary-container dark:bg-dark-secondary-container pl-3 pr-3 pt-1 pb-1 rounded-4xl"
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					height="24px"
+					viewBox="0 -960 960 960"
+					width="24px"
+					class="fill-on-secondary-container dark:fill-dark-on-secondary-container"
+					><path
+						d="M240-200h133.85v-201.54q0-15.36 10.39-25.76 10.4-10.39 25.76-10.39h140q15.36 0 25.76 10.39 10.39 10.4 10.39 25.76V-200H720v-353.85q0-3.07-1.35-5.57-1.34-2.5-3.65-4.43L487.31-735q-3.08-2.69-7.31-2.69-4.23 0-7.31 2.69L245-563.85q-2.31 1.93-3.65 4.43-1.35 2.5-1.35 5.57V-200Zm-60 0v-353.85q0-17.17 7.68-32.53 7.69-15.37 21.24-25.31l227.7-171.54q18.95-14.46 43.32-14.46t43.44 14.46l227.7 171.54q13.55 9.94 21.24 25.31 7.68 15.36 7.68 32.53V-200q0 24.54-17.73 42.27Q744.54-140 720-140H562.31q-15.37 0-25.76-10.4-10.4-10.39-10.4-25.76v-201.53h-92.3v201.53q0 15.37-10.4 25.76-10.39 10.4-25.76 10.4H240q-24.54 0-42.27-17.73Q180-175.46 180-200Zm300-269.23Z"
+					/></svg
+				>
+			</div>
+			<div class="text-primary font-semibold">Home</div>
+		</a>
+	</div>
+
+	<div class="justify-items-center">
 		<div
 			class="bg-secondary-container dark:bg-dark-secondary-container pl-3 pr-3 pt-1 pb-1 rounded-4xl"
 		>
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				height="24px"
-				viewBox="0 -960 960 960"
-				width="24px"
-				class="fill-on-secondary-container dark:fill-dark-on-secondary-container"
-				><path
-					d="M240-200h133.85v-201.54q0-15.36 10.39-25.76 10.4-10.39 25.76-10.39h140q15.36 0 25.76 10.39 10.39 10.4 10.39 25.76V-200H720v-353.85q0-3.07-1.35-5.57-1.34-2.5-3.65-4.43L487.31-735q-3.08-2.69-7.31-2.69-4.23 0-7.31 2.69L245-563.85q-2.31 1.93-3.65 4.43-1.35 2.5-1.35 5.57V-200Zm-60 0v-353.85q0-17.17 7.68-32.53 7.69-15.37 21.24-25.31l227.7-171.54q18.95-14.46 43.32-14.46t43.44 14.46l227.7 171.54q13.55 9.94 21.24 25.31 7.68 15.36 7.68 32.53V-200q0 24.54-17.73 42.27Q744.54-140 720-140H562.31q-15.37 0-25.76-10.4-10.4-10.39-10.4-25.76v-201.53h-92.3v201.53q0 15.37-10.4 25.76-10.39 10.4-25.76 10.4H240q-24.54 0-42.27-17.73Q180-175.46 180-200Zm300-269.23Z"
-				/></svg
-			>
-		</div>
-		<div class="text-primary font-semibold">Home</div>
-	</div>
-	<div class="justify-items-center">
-		<div class="bg-secondary-container dark:bg-dark-secondary-container pl-3 pr-3 pt-1 pb-1 rounded-4xl">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				height="24px"
@@ -147,7 +152,9 @@
 		<div class="text-on-surface-variant dark:text-dark-on-surface-variant">Live</div>
 	</div>
 	<div class="justify-items-center">
-		<div class="bg-secondary-container dark:bg-dark-secondary-container pl-3 pr-3 pt-1 pb-1 rounded-4xl">
+		<div
+			class="bg-secondary-container dark:bg-dark-secondary-container pl-3 pr-3 pt-1 pb-1 rounded-4xl"
+		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				height="24px"
@@ -162,7 +169,9 @@
 		<div class="text-on-surface-variant dark:text-dark-on-surface-variant">Notifikasi</div>
 	</div>
 	<div class="justify-items-center">
-		<div class="bg-secondary-container dark:bg-dark-secondary-container pl-3 pr-3 pt-1 pb-1 rounded-4xl">
+		<div
+			class="bg-secondary-container dark:bg-dark-secondary-container pl-3 pr-3 pt-1 pb-1 rounded-4xl"
+		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				height="24px"

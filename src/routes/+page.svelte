@@ -2,10 +2,14 @@
 	import { onMount } from 'svelte';
 	let y = $state(0);
 	let sy = $state(0);
-	let lebar = $derived(y - 70);
-	let tinggi = $derived((y - 70) / 2);
-	let lebar2 = $derived(y - 310);
-	let tinggi2 = $derived((y - 310) / 2);
+	
+	let lebar = $derived((5/6*y)-16);
+
+	let tinggi = $derived(100);
+	
+
+	let lebar2 = $derived((1/6*y)-16);
+	
 
 	let scrollLeft = $state(0);
 	let scrollTop = $state(0);
@@ -17,42 +21,41 @@
 		scrollLeft = e.currentTarget.scrollLeft;
 		scrollTop = e.currentTarget.scrollTop;
 	}}
-	class="box   home mt-15 text-on-background dark:text-dark-on-background max-w-full overflow-scroll scrollbar-none"
+	class="box   home mt-17 text-on-background dark:text-dark-on-background max-w-full overflow-scroll scrollbar-none ml-3 mr-3"
 >
 	<div>
-		<div class="flex m-2 gap-2">
+		<div class="flex gap-2">
 			<img
-				width={lebar-scrollLeft} 
-				height={tinggi}
-				class="rounded-3xl object-cover"
+				width={lebar-scrollLeft}
+				class="rounded-4xl object-cover h-50"
 				src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 				alt="carousel 1"
 			/>
 			<img
 				width={lebar2+scrollLeft}
-				height={tinggi2}
-				class="rounded-3xl object-cover"
+				
+				class="rounded-4xl object-cover h-50"
 				src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8anVpY2V8ZW58MHwwfDB8fHww"
 				alt="carousel 1"
 			/>
-			<img
-				width={lebar2}
-				height={tinggi2}
-				class="rounded-3xl object-cover"
+<img
+				width={lebar2+scrollLeft}
+			
+				class="rounded-4xl object-cover h-50"
 				src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8anVpY2V8ZW58MHwwfDB8fHww"
 				alt="carousel 1"
 			/>
-			<img
-				width={lebar}
-				height={tinggi}
-				class="rounded-3xl"
-				src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-				alt="carousel 1"
-			/>
+		
+			
 		</div>
 	</div>
 </div>
-<div>{scrollLeft}</div>
+<div>scrol {scrollLeft}</div>
+<div>lebar {lebar}</div>
+<div>lebar2 {lebar2}</div>
+<div>lebar screen {y}</div>
+<div>tinggi {tinggi}</div>
+
 <div></div>
 <div class="mt-3 flex ml-4 mr-4 max-w-full flex-wrap flex-row gap-y-4">
 	<div class="grid justify-center text-center basis-1/4">
