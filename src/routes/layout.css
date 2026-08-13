@@ -2,16 +2,6 @@
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
-@keyframes fade-in {
-	from {
-		opacity: 0;
-	}
-}
 
-@keyframes fade-out {
-	to {
-		opacity: 0;
-	}
-}
 
 
