@@ -23,13 +23,13 @@
 </script>
 
 <svelte:window bind:innerWidth={y} />
-<div class="top-level mt-17">
+<div class="top-level top-17 bottom-17 fixed overflow-y-scroll">
 	<div
 		onscroll={(e) => {
 			scrollLeft = e.currentTarget.scrollLeft;
 			scrollTop = e.currentTarget.scrollTop;
 		}}
-		class="box home mt-17 text-on-background dark:text-dark-on-background max-w-full overflow-scroll scrollbar-none ml-3 mr-3"
+		class="box home text-on-background dark:text-dark-on-background max-w-full overflow-scroll scrollbar-none ml-3 mr-3"
 	>
 		<div>
 			<div class="flex gap-2">
