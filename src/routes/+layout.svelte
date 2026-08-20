@@ -10,7 +10,14 @@
 	import { register } from 'swiper/element/bundle';
 	// register Swiper custom elements
 	register();
-
+	const spaceBetween = 10;
+	const onProgress = (e) => {
+		const [swiper, progress] = e.detail;
+		console.log(progress);
+	};
+	const onSlideChange = (e) => {
+		console.log('slide changed');
+	};
 	import { preparePageTransition } from '$lib/page-transiton';
 
 	preparePageTransition();
@@ -117,7 +124,7 @@
 			aria-label="home"
 			class="text-center flex flex-col justify-items-center"
 		>
-			<div class="pl-3 pr-3 pt-1 pb-1 rounded-4xl">
+			<div class="pl-3 pr-3 pt-1 pb-1 rounded-4xl my-icon">
 				<div
 					class="{page.url.pathname === '/'
 						? 'bg-secondary-container dark:bg-dark-secondary-container'

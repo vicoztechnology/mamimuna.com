@@ -123,6 +123,9 @@
 	--shadow-md-z4:
 		0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14),
 		0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+	--shadow-dark-md-z4:
+		0px 2px 4px -1px rgba(255, 255, 255, 0.2), 0px 4px 5px 0px rgba(255, 255, 255, 0.14),
+		0px 1px 10px 0px rgba(255, 255, 255, 0.12);
 	--shadow-md-z5:
 		0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14),
 		0px 3px 14px 2px rgba(0, 0, 0, 0.12);
@@ -130,10 +133,10 @@
 
 /* CSS */
 .top-level {
-  view-transition-name: top-level-destination;
+	view-transition-name: top-level-destination;
 }
 .spesial {
-  view-transition-name: none;
+	view-transition-name: none;
 }
 
 @media (prefers-reduced-motion) {
@@ -156,34 +159,46 @@
 
 /* Customize the targeted transition group */
 ::view-transition-group(top-level-destination) {
-  animation-duration: 500ms;
-  animation-timing-function: cubic-bezier(0.2, 0, 0, 1);
+	animation-duration: 500ms;
+	animation-timing-function: cubic-bezier(0.2, 0, 0, 1);
 }
 
 /* Old view fades out cleanly */
 ::view-transition-old(top-level-destination) {
-  animation: m3-fade-out 150ms cubic-bezier(0.4, 0, 1, 1) forwards;
+	animation: m3-fade-out 150ms cubic-bezier(0.4, 0, 1, 1) forwards;
 }
 
 /* New view scales up subtly while fading in */
 ::view-transition-new(top-level-destination) {
-  animation: 
-    m3-fade-in 350ms cubic-bezier(0, 0, 0.2, 1) 150ms both,
-    m3-scale-in 500ms cubic-bezier(0.2, 0, 0, 1) both;
+	animation:
+		m3-fade-in 350ms cubic-bezier(0, 0, 0.2, 1) 150ms both,
+		m3-scale-in 500ms cubic-bezier(0.2, 0, 0, 1) both;
 }
 
 /* M3 Keyframe Animations */
 @keyframes m3-fade-out {
-  from { opacity: 1; }
-  to { opacity: 0; }
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
 }
 
 @keyframes m3-fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 @keyframes m3-scale-in {
-  from { transform: scale(0.96); }
-  to { transform: scale(1); }
+	from {
+		transform: scale(0.96);
+	}
+	to {
+		transform: scale(1);
+	}
 }
