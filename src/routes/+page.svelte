@@ -3,14 +3,6 @@
 
 	register();
 
-	const spaceBetween = 10;
-	const onProgress = (e) => {
-		const [swiper, progress] = e.detail;
-		console.log(progress);
-	};
-	const onSlideChange = (e) => {
-		console.log('slide changed');
-	};
 	let y = $state(0);
 	let sy = $state(0);
 
@@ -25,89 +17,13 @@
 <svelte:window bind:innerWidth={y} />
 <div class="text-on-surface dark:text-dark-on-surface">
 	<div class="top-level top-17 bottom-17 fixed overflow-y-scroll">
-		<!--
-		<div
-			onscroll={(e) => {
-				scrollLeft = e.currentTarget.scrollLeft;
-				scrollTop = e.currentTarget.scrollTop;
-			}}
-			class="box home text-on-background dark:text-dark-on-background max-w-full overflow-scroll scrollbar-none ml-3 mr-3"
-		>
-			<div>
-				<div class="flex gap-2">
-					<img
-						width={lebar - scrollLeft}
-						class="rounded-4xl object-cover h-50 max-w-{lebar}"
-						src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-						alt="carousel 1"
-					/>
-					<img
-						width={lebar2 + scrollLeft}
-						class="rounded-4xl object-cover h-50"
-						src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-						alt="carousel 1"
-					/>
-					<img
-						width={lebar2}
-						class="rounded-4xl object-cover h-50"
-						src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8anVpY2V8ZW58MHwwfDB8fHww"
-						alt="carousel 1"
-					/>
-					<img
-						width={lebar2}
-						class="rounded-4xl object-cover h-50"
-						src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8anVpY2V8ZW58MHwwfDB8fHww"
-						alt="carousel 1"
-					/>
-					<img
-						width={lebar2}
-						class="rounded-4xl object-cover h-50"
-						src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8anVpY2V8ZW58MHwwfDB8fHww"
-						alt="carousel 1"
-					/>
-					<img
-						width={lebar2}
-						class="rounded-4xl object-cover h-50"
-						src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8anVpY2V8ZW58MHwwfDB8fHww"
-						alt="carousel 1"
-					/>
-					<img
-						width={lebar2}
-						class="rounded-4xl object-cover h-50"
-						src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8anVpY2V8ZW58MHwwfDB8fHww"
-						alt="carousel 1"
-					/>
-				</div>
-			</div>
+		<div class="ml-2 mr-2">
+			<img
+				class="rounded-4xl object-cover h-50 w-full"
+				src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				alt="carousel 1"
+			/>
 		</div>
--->
-		<!--
-<swiper-container
-  slides-per-view={3}
-  space-between={spaceBetween}
-  centered-slides={true}
-  pagination={{
-    hideOnClick: true,
-  }}
-  breakpoints={{
-    768: {
-      slidesPerView: 3,
-    },
-  }}
-  onswiperprogress={onProgress}
-  onswiperslidechange={onSlideChange}
->
-  <swiper-slide>Slide 1</swiper-slide>
-  <swiper-slide>Slide 2</swiper-slide>
-  <swiper-slide>Slide 3</swiper-slide>
-</swiper-container>
--->
-		<swiper-container slides-per-view="3" grid-rows="3" mousewheel-force-to-axis="true">
-			<swiper-slide>Slide 1</swiper-slide>
-			<swiper-slide>Slide 2</swiper-slide>
-			<swiper-slide>Slide 3</swiper-slide>
-			...
-		</swiper-container>
 		<div class="mt-3 flex ml-4 mr-4 max-w-full flex-wrap flex-row gap-y-4">
 			<div class="grid justify-center text-center basis-1/4">
 				<button

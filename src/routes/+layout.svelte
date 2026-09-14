@@ -7,17 +7,7 @@
 	import { page, navigating } from '$app/state';
 	import logo from '$lib/assets/logo40.png';
 	// import function to register Swiper custom elements
-	import { register } from 'swiper/element/bundle';
-	// register Swiper custom elements
-	register();
-	const spaceBetween = 10;
-	const onProgress = (e) => {
-		const [swiper, progress] = e.detail;
-		console.log(progress);
-	};
-	const onSlideChange = (e) => {
-		console.log('slide changed');
-	};
+	
 	import { preparePageTransition } from '$lib/page-transiton';
 
 	preparePageTransition();
@@ -26,15 +16,16 @@
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
 <div
-	class="app-bar z-10 fixed w-full dark:bg-dark-surface bg-surface flex items-center justify-between top-0 pt-3 pb-3"
+	class="app-bar z-10 fixed w-full dark:bg-dark-surface bg-surface flex items-center justify-between top-0 pt-3 pb-2"
 >
 	{#if page.url.pathname === '/'}
-		<a href="/" class="ml-1" title="tombol menu">
-			<img src={logo} alt="logo mamimuna" />
+		<a href="/" class="ml-2" title="tombol menu">
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" class="fill-on-background dark:fill-dark-on-background"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+			<!--<img src={logo} alt="logo mamimuna" />-->
 		</a>
 	{/if}
 
-	<form class="flex items-center rounded-full w-full ml-1 mr-4" data-sveltekit-keepfocus>
+	<form class="flex items-center rounded-full w-full ml-2 mr-2" data-sveltekit-keepfocus>
 		<label for="voice-search" class="sr-only">Search</label>
 
 		<div class="relative w-full rounded-full">
@@ -69,7 +60,7 @@
 				<input
 					type="text"
 					id="voice-search"
-					class=" w-full dark:text-dark-on-surface-variant dark:bg-dark-surface-container-high border-none focus:outline-none focus:ring-0 rounded-full block ps-9 pe-3 py-2.5 bg-surface-container-high text-on-surface-variant text-sm rounded-base placeholder:text-body"
+					class=" w-full dark:text-dark-on-surface-variant dark:bg-dark-surface-container-high border-none focus:outline-none focus:ring-0 rounded-full block ps-9 pe-3 py-2.5 bg-surface-container-high text-on-surface-variant text-base rounded-base placeholder:text-body"
 					placeholder="cari..."
 					required
 				/>
@@ -105,7 +96,7 @@
 	</form>
 	{#if page.url.pathname === '/'}
 		<button
-			class="mr-3 text-on-secondary-container dark:text-dark-on-secondary-container bg-secondary-container dark:bg-dark-secondary-container text-sm p-2.5 rounded-full"
+			class="mr-2 text-on-secondary-container dark:text-dark-on-secondary-container bg-secondary-container dark:bg-dark-secondary-container text-sm p-2.5 rounded-full"
 		>
 			daftar
 		</button>
