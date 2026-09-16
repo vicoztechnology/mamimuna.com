@@ -16,7 +16,7 @@
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
 <div
-	class="app-bar z-10 fixed w-full dark:bg-dark-surface bg-surface flex items-center justify-between top-0 pt-3 pb-2"
+	class="app-bar z-10 fixed w-full dark:bg-dark-surface bg-surface flex items-center justify-between top-0 pt-2 "
 >
 	{#if page.url.pathname === '/'}
 		<a href="/" class="ml-2" title="tombol menu">
@@ -36,7 +36,7 @@
 		<label for="voice-search" class="sr-only">Search</label>
 
 		<div class="relative w-full rounded-full">
-			<div class="absolute inset-y-0 flex items-center ps-3">
+			<div class="absolute inset-y-0 flex items-center ps-4">
 				{#if page.url.pathname === '/'}
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -68,13 +68,13 @@
 				
 					type="text"
 					id="voice-search"
-					class=" pl-12 w-full dark:text-dark-on-surface-variant dark:bg-dark-surface-container-high border-none focus:outline-none focus:ring-0 rounded-full block ps-9 pe-3 py-2.5 bg-surface-container-high text-on-surface-variant text-base rounded-base placeholder:text-body ml-3"
-					placeholder="cari..."
+					class=" pl-12 w-full dark:text-dark-on-surface-variant dark:bg-dark-surface-container-high border-none focus:outline-none focus:ring-0 rounded-full block ps-9 pe-3 py-2.5 bg-surface-container-high text-on-surface-variant text-base rounded-base placeholder:text-body ml-3 "
+					placeholder="Cari..."
 					required
 				/>
 			</a>
 			{#if page.url.pathname === '/'}
-				<a href="/" title="tombol close" class="absolute inset-y-0 end-0 flex items-center pe-3">
+				<a href="/" title="tombol close" class="absolute inset-y-0 end-0 flex items-center pe-1">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						class="fill-on-background dark:fill-dark-on-background"
@@ -87,7 +87,7 @@
 					>
 				</a>
 			{:else}
-				<a href="/" title="tombol close" class="absolute inset-y-0 end-0 flex items-center pe-3">
+				<a href="/" title="tombol close" class="absolute inset-y-0 end-0 flex items-center pe-1">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						height="24px"

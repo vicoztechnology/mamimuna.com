@@ -16,7 +16,7 @@
 
 <svelte:window bind:innerWidth={y} />
 <div class="text-on-surface dark:text-dark-on-surface">
-	<div class="top-level top-17 bottom-17 fixed overflow-y-scroll">
+	<div class="top-level top-15 bottom-17 fixed overflow-y-scroll">
 		<div class="ml-2 mr-2">
 			<img
 				class="rounded-4xl object-cover h-50 w-full"
