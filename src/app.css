@@ -156,7 +156,17 @@
 @view-transition {
 	navigation: auto;
 }
+.kategori {
+  view-transition-name: kategori-list;
+}
 
+::view-transition-old(kategori-list) {
+  animation: 0.25s linear both shrink-x;
+}
+
+::view-transition-new(kategori-list) {
+  animation: 0.25s 0.25s linear both grow-x;
+}
 /* Customize the targeted transition group */
 ::view-transition-group(top-level-destination) {
 	animation-duration: 500ms;

@@ -11,7 +11,7 @@
 			<div>loading...</div>
 			<div>loading...</div>
 		{:then kategoris}
-			<div class="flex gap-3 max-w-full overflow-scroll ml-2 mr-2 scrollbar-none">
+			<div class="flex kategori gap-3 max-w-full overflow-scroll ml-2 mr-2 scrollbar-none " style="view-transition-name: kategori">
 				{#each kategoris as kategori}
 					<a
 						href={`/kategori/${kategori.kode_kategori}`}

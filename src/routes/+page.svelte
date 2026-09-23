@@ -27,7 +27,7 @@
 				alt="carousel 1"
 			/>
 		</div>
-		<div class="mt-3 flex ml-4 mr-4 max-w-full flex-wrap flex-row gap-y-4">
+		<div class="kategori mt-3 flex ml-4 mr-4 max-w-full flex-wrap flex-row gap-y-4" style="view-transition-name: kategori">
 			{#await data.listkategori}
 				<div>loading...</div>
 				<div>loading...</div>
