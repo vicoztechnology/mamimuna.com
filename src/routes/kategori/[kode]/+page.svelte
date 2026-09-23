@@ -23,7 +23,7 @@
 							class="border-outline-variant dark:border-dark-outline-variant grid w-16 h-16 place-items-center gap-y-0 border rounded-3xl"
 							title=""
 						>
-							<img src={kategori.image} alt={kategori.image} />
+						{@html kategori.image}
 						</button>
 						<span class="text-on-surface-variant dark:text-dark-on-surface-variant text-sm"
 							>{kategori.nama_kategori}</span
