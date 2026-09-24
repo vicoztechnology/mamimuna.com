@@ -18,6 +18,7 @@
 						aria-label="detail"
 						aria-current="location"
 						class="grid justify-center text-center basis-1/4"
+						style:--tag={kategori.kode_kategori}
 					>
 						<button
 							class="border-outline-variant dark:border-dark-outline-variant grid w-16 h-16 place-items-center gap-y-0 border rounded-3xl"

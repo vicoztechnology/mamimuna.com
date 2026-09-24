@@ -27,7 +27,7 @@
 				alt="carousel 1"
 			/>
 		</div>
-		<div class="kategori mt-3 flex ml-4 mr-4 max-w-full flex-wrap flex-row gap-y-4" style="view-transition-name: kategori">
+		<div class="kategori mt-3 flex ml-4 mr-4 max-w-full flex-wrap flex-row gap-y-4" >
 			{#await data.listkategori}
 				<div>loading...</div>
 				<div>loading...</div>
@@ -37,7 +37,7 @@
 					
 						<a href={`/kategori/${kategoris.kode_kategori}`}
 						aria-label="detail"
-						aria-current="location" class="grid justify-center text-center basis-1/4">
+						aria-current="location" class="grid justify-center text-center basis-1/4" style:--tag={kategoris.kode_kategori}>
 							<button
 								class="border-outline-variant dark:border-dark-outline-variant grid w-16 h-16 place-items-center gap-y-0 border rounded-3xl"
 								title=""
